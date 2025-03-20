@@ -1,7 +1,7 @@
 Config = {}
 
 -- Pengaturan Waktu
-Config.AFKTimeout = 5 -- Waktu dalam detik sebelum pemain dianggap AFK (300 = 5 menit)
+Config.AFKTimeout = 300 -- Waktu dalam detik sebelum pemain dianggap AFK (300 = 5 menit)
 Config.CheckInterval = 1000 -- Interval pengecekan aktivitas pemain dalam milidetik (1000 = 1 detik)
 Config.TimeFormat = {
     hours = "jam",
