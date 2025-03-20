@@ -149,6 +149,7 @@ Config.AFKZone = vector3(x, y, z) -- Koordinat zona AFK
 ## Support
 
 Untuk bantuan atau laporan bug, silakan buat issue di repository.
+atau masuk discord https://discord.gg/yxvDyQeUFZ
 
 ## Lisensi
 
