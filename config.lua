@@ -2,17 +2,16 @@ Config = {}
 
 -- Pengaturan Waktu
 Config.AFKTimeout = 300 -- Waktu dalam detik sebelum pemain dianggap AFK (300 = 5 menit)
-Config.CheckInterval = 1000 -- Interval pengecekan aktivitas pemain dalam milidetik (1000 = 1 detik)
+Config.CheckInterval = 1000 
 Config.TimeFormat = {
     hours = "jam",
     minutes = "menit",
     seconds = "detik"
 }
 
--- Pengaturan Posisi
-Config.AFKZone = vector3(223.6673, -897.6230, 30.6923) -- Koordinat zona AFK (x, y, z)
+-- Lokasi Player Ketika Afk
+Config.AFKZone = vector3(223.6673, -897.6230, 30.6923)
 
--- Pengaturan Notifikasi
 Config.Notifications = {
     afk = {
         title = 'Status AFK',
@@ -31,10 +30,9 @@ Config.Notifications = {
     }
 }
 
--- Pengaturan Tampilan
 Config.UI = {
-    showTimer = true, -- Set false untuk menyembunyikan tampilan waktu AFK
-    position = "right-center", -- Posisi tampilan UI (right-center, left-center, top-center, bottom-center)
+    showTimer = true, -- Set false untuk menyembunyikan ui waktu
+    position = "right-center",
     style = {
         borderRadius = 0,
         backgroundColor = '#141517',
