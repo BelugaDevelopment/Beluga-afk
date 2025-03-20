@@ -1,14 +1,12 @@
 ESX = exports["es_extended"]:getSharedObject()
 local pemainAFK = {}
 
--- Event names
 local Events = {
     setAFK = 'bel-afk:setAFK',
     getAFKStatus = 'bel-afk:getAFKStatus',
     getSharedObject = 'esx:getSharedObject'
 }
 
--- Event ketika pemain mengatur status AFK
 RegisterServerEvent(Events.setAFK)
 AddEventHandler(Events.setAFK, function(status)
     local _source = source
@@ -25,7 +23,6 @@ AddEventHandler(Events.setAFK, function(status)
     end
 end)
 
--- Hapus pemain dari daftar AFK ketika mereka keluar
 AddEventHandler('playerDropped', function()
     local _source = source
     if pemainAFK[_source] then
@@ -33,7 +30,6 @@ AddEventHandler('playerDropped', function()
     end
 end)
 
--- Dapatkan status AFK dari pemain
 ESX.RegisterServerCallback(Events.getAFKStatus, function(source, cb, target)
     cb(pemainAFK[target] == true)
 end) 
